@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="leftArea">
+            <canvas id="carCanvas"></canvas>
+            <div id="verticalButtons">
+                <button onclick="save()">💾</button>
+                <button onclick="discard()">🗑️</button>
+            </div>
+            <canvas id="networkCanvas"></canvas>
+        </div>
+        <div id="rightPanel">
+            <h3>Controls</h3>
+            <label>Cars: <span id="carCountLabel"></span>
+                <input type="range" id="carCount" min="1" max="100">
+            </label>
+            <label>Mutation rate: <span id="mutationLabel"></span>
+                <input type="range" id="mutationRate" min="0" max="1" step="0.01">
+            </label>
+            <label>Sensors: <span id="sensorCountLabel"></span>
+                <input type="range" id="sensorCount" min="1" max="8">
+            </label>
+            <label>Sensor length: <span id="sensorLengthLabel"></span>
+                <input type="range" id="sensorLength" min="50" max="300">
+            </label>
+            <button id="applyBtn">Apply & Restart</button>
+            <h3>Metrics</h3>
+            <div id="metrics">
+                Distance: <span id="distance">0</span><br>
+                FPS: <span id="fps">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="ui.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+PHASE 1 Usability & Visual polish
+
+Modern, responsive layout: split screen—road on the left, control/metrics panel on the right.
+Live metrics: generation, best distance, FPS.
+Runtime sliders + buttons • # cars • mutation rate • sensor count / length
+All update the simulation instantly—no code edits needed.
+Improved car/traffic sprites with CSS hue-rotation for variety.
+Dark-mode friendly color palette.
+
+PHASE 2 Better AI / training feedback
+
+Training stats chart (tiny canvas) plotting best distance per generation.
+“Ghost replay” of the previous best car so you can visually compare progress.
+Two training modes
+• Classic genetic (current)
+• Hill-climb (mutate one survivor continuously) — toggled from UI.
+
+PHASE 3 Performance & code quality
+
+Web Worker to run physics + NN update loop off-thread; main thread just draws.
+Modular ES modules (import) instead of many <script> tags.
+Config file (config.js) instead of hard-coded numbers.
+Small refactors (constants, utility functions, arrow functions, stricter typing via JSDoc).
+Optional: Stats.js or simple rolling-average FPS counter.
+Deliverables • New files: ui.js, chart.js, config.js, worker.js, updated 
+index.html
+, minor edits across existing JS.
+• README section on new features.
+
+Estimated impact • Far smoother on low-end hardware (worker + throttled FPS).
+• Much clearer feedback—users actually see the AI improving.
+• Tweak-and-play feel; shareable demos (just open HTML).
