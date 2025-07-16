@@ -47,10 +47,6 @@ A JavaScript-based self-driving car simulation that uses a neural network to lea
 This project uses vanilla JavaScript with HTML5 Canvas. No external libraries are required.
 
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Acknowledgements
 
 - Inspired by various online tutorials and educational resources on neural networks and genetic algorithms
