@@ -42,32 +42,10 @@ A JavaScript-based self-driving car simulation that uses a neural network to lea
 5. Use the save (💾) button to save the best performing neural network
 6. Use the delete (🗑️) button to clear the saved network
 
-## Optimization
-
-This version has been optimized for better performance on lower-end systems:
-- Reduced number of cars (from 100 to 20)
-- Simplified neural network architecture
-- Fewer sensor rays (3 instead of 5)
-- Shorter sensor range (100px instead of 150px)
-
-## Customization
-
-You can modify the following parameters to experiment with different configurations:
-
-- Number of cars: Edit `N` in `main.js`
-- Neural network architecture: Edit in `car.js` constructor
-- Sensor configuration: Edit `sensor.js`
-- Physics parameters: Edit `car.js` (speed, acceleration, etc.)
-
 ## Dependencies
 
 This project uses vanilla JavaScript with HTML5 Canvas. No external libraries are required.
 
-## Learning Resources
-
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
-- [The Nature of Code - Genetic Algorithms](https://natureofcode.com/book/chapter-9-the-evolution-of-code/)
-- [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/RLbook2020.pdf)
 
 ## License
 
